@@ -1,0 +1,538 @@
+*{
+  box-sizing: border-box;
+  font-family:'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+/* header start */
+
+#header{
+position: relative;
+width: 100%;
+
+}
+div img{
+  width: 100%;
+  height: auto;
+}
+
+div h1{
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  margin: 2%;
+  color: rgb(72, 72, 72);
+}
+
+div h2 {
+  position: absolute;
+  top: 22%;
+  right: 5%;
+  color: rgb(72, 72, 72);
+}
+
+div nav a{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin: 10px
+}
+div nav a:last-child{
+  top: 14%;
+
+}
+
+div button {
+  position: absolute;
+  bottom: 2.3em;
+  right:1.5em;
+  border: none;
+  color: white;
+  background-color: rgba(27, 58, 34, 0.75);
+  font-size: 18px;
+  margin: 2%;
+  padding: 10px;
+border-radius: 10px;
+}
+
+button:hover{
+  background-color:rgba(3, 36, 11, 0.75) ;
+}
+/* header end */
+
+/* about me start */
+#section-one{ 
+  width: 100%;
+  height: 37vh;
+  display: inline-block;
+  padding: 40px 40px 5px 40px;
+  font-size: 20px;
+}
+#section-one h2{
+margin: 10px 0px;
+}
+/* about me end */
+
+/* article start */
+#portfolio{
+  background-color: black;
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+margin: auto;
+}
+.box{
+  width: 75%;
+  height: 29%;
+  background-color: brown;
+  display: flex;
+margin: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+flex-direction: column;
+color: white;
+list-style-type: none;
+}
+article div h2{
+  position: relative;
+  left: 12%;
+  bottom: 7%;
+  display: inline-block;
+  margin: 10px 0px;
+  color: white;
+}
+.project-one{
+background-color: aqua;
+width: 100%;
+height: 50%;
+}
+.project-two{
+background-color: purple;
+width: 100%;
+height: 50%;
+}
+.project-three{
+background-color: rosybrown;
+width: 100%;
+height: 50%;
+}
+.port-four{
+  background-color: black;
+  position: absolute;
+  z-index: -1;
+}
+
+article div h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+article div ul li{
+  list-style: none;
+  margin:5px ;
+}
+/* get in touch section start*/
+#get-touch{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  border-top: solid grey 2px;
+  color: white;
+  padding: 30px 40px ;  
+  font-size: 20px;
+}
+#get-touch h3{
+  margin: 20px 0px 10px 0px;
+  font-size: 1.6em;
+
+}
+#get-touch p{
+ font-size: 15px;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+}
+div div a{
+  color: white;
+  padding: 3px;
+}
+form-one{
+  padding: 10px;
+}
+input{
+ display: flex;
+ border: none;
+ width: 100%;
+ height: 2em;
+ border-radius: 2px;
+}
+textarea{
+  width: 100%;
+}
+label{
+display: inline-block;
+margin: 5px 0px 5px 0px;
+font-size: 1rem;
+}
+
+.button{
+  display: block;
+  text-align: center;
+  margin: 8px 0px 5px 0px;
+  background-color:darkslategray;
+  color: white;
+}
+/*get in touch section end */
+/* footer start */
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+/* footer end */
+/* media start */
+@media screen and (min-width:425px) {
+
+header nav a i{
+font-size: 40px; 
+margin: 10px 5px ;
+display: block;
+}
+div h1{
+font-size: 40px;
+}
+div h2{
+  font-size: 30px;
+}
+div button{
+  width: 10em;
+  height: 3em;
+  right: 0.5em;
+}
+#section-one{
+  padding: 28px 39px 5px 47px;
+  height: 21vh;
+}
+
+}
+@media screen and (min-width:768px) {
+header nav a i{
+  font-size: 60px;
+  } 
+div h1{
+  font-size: 60px;
+}
+div h2{
+  font-size: 40px;
+}
+div button{
+  width: 11em;
+  height: 3em;
+  font-size: 30px;
+}
+
+#section-one{
+  font-size: 26px;
+  padding: 37px 90px 20px 63px;
+  height: 27vh;
+}
+
+#portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+padding: 25px 50px 10px 50px;
+height:auto ;
+}
+.port-h2 h2{
+  position: relative;
+  top: 0px;
+  left: 14px;
+
+}
+.port-h2{
+  flex-basis: 100%;
+}
+.box{
+  width: 300px;
+  height: 400px;
+}
+#get-touch {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    border-top: solid grey 2px;
+    color: white;
+    padding: 25px 64px;
+    font-size: 31px;
+}
+label{
+  font-size: 1.8rem;
+  padding: 5px 0px 5px 0px;
+}
+input{
+  height: 2.7em;
+}
+textarea{
+  height: 8em;
+}
+.button{
+  height: 4em;
+  margin: 10px 0px;
+}
+.port-four{
+position: relative;
+}
+}
+@media screen and (min-width:992px) {
+#section-one{
+  height: 20vh;
+}
+
+#get-touch{
+  height: 91vh;
+}
+
+#get-touch p {
+font-size: 1.7rem;
+margin: 5px 0px;
+}
+}
+@media screen and (min-width:1024px) {
+  body{
+    background-color: #344e41;
+  }
+ #header img{
+   display: block;
+   width: 90%;
+   height: auto;
+   margin: auto;
+   margin-top: 3%;
+ }
+
+#git-icon {
+top:0.1em;
+left: 5%;
+
+ }
+#linkedin-icon{
+  top: 0.1em;
+  left: 13%;
+
+}
+div h1 {
+  top: 4%;
+  right: 10%;
+  margin: auto;
+}
+
+div h2 {
+  top: 18%;
+  right: 10%;
+}
+div button{
+  bottom: 12%;
+  right: 10%;
+  margin:0px;
+  padding: 0px;
+}
+#header{
+  width: 100%;
+  height: 20%;
+}
+
+#section-one{
+  width: 90%;
+  margin: auto;
+  display: block;
+  background-color: white;
+}
+
+#portfolio {
+height: auto;
+width: 90%;
+}
+.port-h2 h2{
+right: 6%;
+}
+
+.box{
+position: relative;
+right: 6%;
+}
+#get-touch{
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+
+}
+@media screen and (min-width:1440px){
+
+  #header nav a i{
+    font-size: 3em;
+  }
+  
+  #git-icon{
+  left: 6%;
+  }
+  
+  #linkedin-icon{
+    left: 14%;
+  }
+  #section-one{
+   padding: 3rem 10rem;
+  }
+  #portfolio{
+    padding: 2em 3em;
+  }
+  .box{
+    right: 0%;
+    width: 22em;
+    height: 35em;
+  }
+  .box h3{
+    font-size:1.8rem ;
+  }
+  .box ul li{
+font-size: 22px;
+margin: 12px;
+  }
+  .port-four{
+    display: none;
+  }
+.port-h2 h2{
+  left: 1rem;
+}
+
+#get-touch{
+  display: flex;
+  flex-direction: row-reverse;
+flex-wrap: wrap;
+justify-content: center;
+justify-content: space-evenly;
+align-content: flex-start;
+padding: 0em;
+gap: 1em;
+border: none;
+}
+
+form h3{
+  display: none;
+}
+#get-touch p{
+  display: none;
+}
+.icons{
+  position: relative;
+  top: 1.6em;
+  right: -3em;
+  padding: 1rem;
+  word-spacing: 7px;
+  font-size: 2em;
+}
+
+.form-title{
+  position:relative;
+  top: -5px;
+  right: 18.6em;
+  height: 1em;
+  }
+form{
+  margin-top: 2em;
+  margin-left:1em ;
+  padding: 2rem;
+}
+footer{
+  height: 6em;
+  font-size: 1.3em;
+  padding: 2.2em;
+}
+}
+@media screen and (min-width:2560px){
+  
+header div nav a {
+font-size: 2.4rem;
+}
+#linkedin-icon{
+  left: 11%;
+}
+div h1 {
+  top: 5%;
+  right: 12%;
+  font-size: 5em;
+}
+  div h2 {
+    top: 14%;
+    right: 11%;
+    font-size: 4em;
+}
+div button {
+  bottom: 13%;
+  right: 14%;
+  width: 13em;
+    height: 3em;
+    font-size: 3em;
+    border-radius: 1em;
+}
+#section-one {
+  padding: 7rem 24rem;
+  height: 20em;
+}
+#section-one h2{
+  font-size: 3em;
+}
+#section-one p{
+  font-size: 3.1rem;
+}
+#portfolio{
+  text-align: left;
+  justify-content: center;
+}
+.port-h2 h2{
+font-size: 5em;
+margin-left: 4.1em;
+}
+.box{
+  margin: 0px;
+  width:22% ;
+  height: 43em;
+}
+.box h3{
+  font-size: 3rem;
+}
+.box ul li{
+  font-size: 2rem;
+}
+#get-touch{
+justify-content: center;
+height: auto;
+gap: 4em;
+}
+#get-touch h3{
+  font-size: 2em;
+  right: 20.5em;
+}
+label{
+  font-size: 1.7em;
+}
+input{
+  height: 5em; 
+}
+form{
+  margin: 2em 3em;
+}
+.button{
+  font-size: 1.7rem;
+}
+}
+/* media end */
